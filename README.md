@@ -40,11 +40,13 @@
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- temperature is the most important driving factor behing the demand of shared bikes. One unit change in temperature increases the demand by approx 5168 units if other drivers are kept constant
-- humidity is a negative driving factor. A unit increase in humidity decreases the demand by approx 2376 units if other drivers are kept constant
-- When the calendar year changed from 2018 to 2019, the demand suddenly increases by approx 1974 units if other drivers are assumed unchanged
-- Similarly if a day is Saturday, or if the month is september, of if the season is summer or winter, or if its a working day - all these factors increases the demand of shared bikes
-- windspeed, along with humidity, as mentioned above, decreases the demand of shared bikes
+- temperature is the most important driving factor behing the demand of shared bikes. One unit change in temperature increases the demand by approx 5195 units if other drivers are kept constant
+- Light rain is a negative driving factor. A day with light rain decreases the demand by approx 2015 units if other drivers are kept constant
+- When the calendar year changed from 2018 to 2019, the demand suddenly increases by approx 1981 units if other drivers are assumed unchanged
+- Similarly if the month is september, of if the season is summer or winter - all these factors increases the demand of shared bikes
+- windspeed, humidity, cloudy weather, holiday, the month of July, or light rain as mentioned above, decreases the demand of shared bikes.
+- Model:  cnt = 1988.33 + 1981.38yr - 859.72holiday + 5195.64temp - 1500.5hum - 1646.97windspeed + 708.65summer + 1170.77winter -436.27Cloudy -2015.06Light Rain -415.6July + 835.94September
+- Adjusted R2 score on training set : 0.84, r2 score on test set: 0.805
 
 ## Technologies Used
 - Python - version 3.9.12
